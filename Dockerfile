@@ -16,5 +16,4 @@ RUN cd xmr-stak \
     && mv bin/* /usr/local/bin
 
 ENTRYPOINT ["/usr/local/bin/xmr-stak"]
-CMD [""]
-#CMD ["--currency haven -o stratum+tcp://xhv.mineallcrypto.com:6046 -u hvxy82aJc7NXMPMmA1Vv5N8DX2ykjpAgtWcXd794FjJXPX37xJHZWcXDbN1BN5wR9RivYG8sNBW1XJrGAZJarDji3ZTiarMePm -p x"]
+CMD ["--currency=haven", "-o=stratum+tcp://xhv.mineallcrypto.com:6046", "-u=hvxy82aJc7NXMPMmA1Vv5N8DX2ykjpAgtWcXd794FjJXPX37xJHZWcXDbN1BN5wR9RivYG8sNBW1XJrGAZJarDji3ZTiarMePm", "-p x"]
